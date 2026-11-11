@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/app-logo.svg" />
+    <title>Stu-Assist - Multi-Agentic Student Assistant</title>
+    <meta name="description" content="Multi-Agentic Student Assistant coordinating academic tasks, budget, wellness routines, and balanced daily plans." />
+    <meta property="og:title" content="Stu-Assist - Multi-Agentic Student Assistant" />
+    <meta property="og:description" content="Multi-Agentic Student Assistant coordinating academic tasks, budget, wellness routines, and balanced daily plans." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var mode = localStorage.getItem('stu_assist_mode');
+          if (mode === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

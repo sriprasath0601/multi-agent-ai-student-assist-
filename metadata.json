@@ -1,0 +1,6 @@
+{
+  "name": "Stu-Assist",
+  "description": "Multi-Agentic Student Assistant coordinating academic tasks, budget, wellness routines, and balanced daily plans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
